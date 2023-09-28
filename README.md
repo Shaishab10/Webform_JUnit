@@ -1,6 +1,6 @@
 # <div align=center > Webform_JUnit </div>
 
-### <div align=center>This repository contains Selenium JUnit project that automates a webform. </div>
+### <div align=center>This repository contains Selenium JUnit project that automates a webform.</div>
 
 ## Scenario:
 Automate the following webform
