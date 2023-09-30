@@ -20,8 +20,9 @@ https://www.digitalunite.com/practice-webform-learners
 - Give this following command  ```gradle clean Test```
 
 ### Reports:
+![Screenshot 2023-09-30 152154](https://github.com/Shaishab10/Webform_JUnit/assets/54171379/2cb157f9-b3b4-4429-a984-72ac11e217a0)
 
-![Screenshot 2023-09-28 110209](https://github.com/Shaishab10/Webform_JUnit/assets/54171379/02cfe55e-6eae-4f4b-bc69-96322fe7c787)
+
 
 
 ### Output video:
