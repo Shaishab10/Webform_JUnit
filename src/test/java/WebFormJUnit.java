@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import utils.Utils;
 
 import java.time.Duration;
 import java.util.List;
@@ -40,7 +41,7 @@ public class WebFormJUnit {
         dateElement.sendKeys("2023"); //year
         driver.findElement(By.id("edit-email")).sendKeys("testuser007@gmail.com"); //email
         driver.findElement(By.id("edit-tell-us-a-bit-about-yourself-")).sendKeys("Testing Junit with selenium"); //textBox
-        scroll(0,500);
+        Utils.scroll(driver,0,500);
         driver.findElement(By.id("edit-uploadocument-upload")).sendKeys(System.getProperty("user.dir")+"/src/test/resources/1.jpg"); //uploadImage
         Thread.sleep(2000);
         driver.findElement(By.id("edit-age")).click(); //checkBox
@@ -48,10 +49,7 @@ public class WebFormJUnit {
         String messageConfirmation = driver.findElement(By.id("block-pagetitle-2")).getText();
         Assertions.assertTrue(messageConfirmation.contains("Thank you for your submission!"));
     }
-    public void scroll(int x,int y){
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollTo("+ x + "," + y + ")");
-    }
+
 
     @AfterAll
     public void quitBrowser(){
